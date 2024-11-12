@@ -211,7 +211,7 @@ export default function Component() {
             {
               name: "Machine Thinking Forest",
               description:
-                "Designed an innovative ensemble model, 'Machine Thinking Forest,' combining decision trees with machine learning algorithms. Achieved high accuracy in complex problem-solving scenarios, pushing the boundaries of predictive analytics."
+                "Designed an innovative ensemble model, Machine Thinking Forest, combining decision trees with machine learning algorithms. Achieved high accuracy in complex problem-solving scenarios, pushing the boundaries of predictive analytics."
             }
           ].map((project, index) => (
             <Card key={index} className="overflow-hidden">
@@ -231,9 +231,9 @@ export default function Component() {
       <section id="contact" className="container px-4 py-24 md:px-6">
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
           <div>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">Let's Connect</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">Lets Connect</h2>
             <p className="text-muted-foreground mb-4">
-              I'm always interested in hearing about new projects and opportunities.
+              I am always interested in hearing about new projects and opportunities.
             </p>
             <div className="flex space-x-4">
               <Button variant="outline" size="icon">

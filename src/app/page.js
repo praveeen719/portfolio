@@ -88,7 +88,7 @@ export default function Component() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-14 items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-xl font-bold">Portfolio</span>
+            <span className="text-xl font-bold">Praveen Kumar Pandey</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
             <Link href="#services" className="transition-colors hover:text-foreground/80">Services</Link>

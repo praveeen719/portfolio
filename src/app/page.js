@@ -103,9 +103,9 @@ export default function Component() {
       {/* Hero Section */}
       <section className="container px-4 py-24 md:px-6">
         <div className="flex flex-col items-center text-center space-y-4">
-          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Creative Designer & Developer</h1>
+          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Applied AI Engineer</h1>
           <p className="max-w-[700px] text-muted-foreground md:text-xl">
-            Crafting beautiful digital experiences through thoughtful design and innovative development.
+          Building cutting-edge AI solutions by blending advanced machine learning techniques with innovative problem-solving for impactful digital transformations.
           </p>
           <div className="flex flex-col gap-4 min-[400px]:flex-row">
             <Button size="lg">View Projects</Button>
@@ -120,33 +120,57 @@ export default function Component() {
         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12">
           <div className="space-y-4">
             <p className="text-muted-foreground">
-              I'm a passionate designer and developer with over 5 years of experience in creating digital solutions that solve
-              real-world problems. My approach combines aesthetic sensibility with technical expertise to deliver exceptional
-              user experiences.
+              Versatile Data Scientist and Machine Learning Engineer with over 3 years of experience. Proven track
+              record in extracting valuable insights, driving business growth through strategic solutions. Advanced
+              proficiency in Python, R, and expertise in developing predictive models and optimizing algorithms.
+              Specialized in crafting innovative solutions, deploying models, and fine-tuning algorithms. Dynamic
+              skill set and proven experience make me a standout candidate for data science and machine learning
+              roles.
             </p>
             <div className="space-y-4">
               <h3 className="text-xl font-bold">Technical Skills</h3>
               <div className="space-y-2">
                 <div className="space-y-1">
                   <div className="flex justify-between">
-                    <span>UI/UX Design</span>
+                    <span>Machine Learning</span>
+                    <span>95%</span>
+                  </div>
+                  <Progress value={95} />
+                </div>
+                <div className="space-y-1">
+                  <div className="flex justify-between">
+                    <span>Deep Learning</span>
                     <span>90%</span>
                   </div>
                   <Progress value={90} />
                 </div>
                 <div className="space-y-1">
                   <div className="flex justify-between">
-                    <span>React Development</span>
+                    <span>Natural Language Processing (NLP)</span>
                     <span>85%</span>
                   </div>
                   <Progress value={85} />
                 </div>
                 <div className="space-y-1">
                   <div className="flex justify-between">
-                    <span>JavaScript</span>
+                    <span>Computer Vision</span>
                     <span>80%</span>
                   </div>
                   <Progress value={80} />
+                </div>
+                <div className="space-y-1">
+                  <div className="flex justify-between">
+                    <span>AI Model Deployment</span>
+                    <span>85%</span>
+                  </div>
+                  <Progress value={85} />
+                </div>
+                <div className="space-y-1">
+                  <div className="flex justify-between">
+                    <span>Reinforcement Learning</span>
+                    <span>75%</span>
+                  </div>
+                  <Progress value={75} />
                 </div>
               </div>
             </div>
@@ -155,9 +179,9 @@ export default function Component() {
             <div className="space-y-4">
               <h3 className="text-xl font-bold">Quick Info</h3>
               <div className="space-y-2">
-                <p><strong>Location:</strong> San Francisco, CA</p>
-                <p><strong>Experience:</strong> 5+ Years</p>
-                <p><strong>Availability:</strong> Open to Projects</p>
+                <p><strong>Location:</strong> Chandigarh, India</p>
+                <p><strong>Experience:</strong> 2+ Years</p>
+                <p><strong>Availability:</strong> Open to jobs</p>
               </div>
               <Button className="w-full" variant="outline">
                 <Download className="mr-2 h-4 w-4" />
@@ -168,24 +192,40 @@ export default function Component() {
         </div>
       </section>
 
+
       {/* Projects Section */}
       <section id="case-studies" className="container px-4 py-24 md:px-6">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12">Featured Projects</h2>
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12">Projects</h2>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {[1, 2, 3].map((project) => (
-            <Card key={project} className="overflow-hidden">
+          {[
+            {
+              name: "Knowledge Search",
+              description:
+                "Developed a cutting-edge search engine utilizing AI techniques for fast, accurate information retrieval. Integrated semantic search to enhance results, improving efficiency and user experience."
+            },
+            {
+              name: "LLM Fine-Tuning",
+              description:
+                "Fine-tuned large language models (LLMs) to specialize in domain-specific tasks. Implemented custom datasets and optimization strategies, significantly enhancing model accuracy and performance for targeted use cases."
+            },
+            {
+              name: "Machine Thinking Forest",
+              description:
+                "Designed an innovative ensemble model, 'Machine Thinking Forest,' combining decision trees with machine learning algorithms. Achieved high accuracy in complex problem-solving scenarios, pushing the boundaries of predictive analytics."
+            }
+          ].map((project, index) => (
+            <Card key={index} className="overflow-hidden">
               <div className="aspect-video w-full bg-muted" />
               <div className="p-6">
-                <h3 className="text-2xl font-bold mb-2">Project {project}</h3>
-                <p className="text-muted-foreground mb-4">
-                  A brief description of the project, highlighting key features and outcomes.
-                </p>
+                <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
+                <p className="text-muted-foreground mb-4">{project.description}</p>
                 <Button variant="outline" className="w-full">View Case Study</Button>
               </div>
             </Card>
           ))}
         </div>
       </section>
+
 
       {/* Contact Section */}
       <section id="contact" className="container px-4 py-24 md:px-6">
